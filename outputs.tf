@@ -7,5 +7,5 @@ output "username" {
 }
 
 output "password" {
-value = scaleway_redis_cluster.main.password
+  value = scaleway_redis_cluster.main.password
 }

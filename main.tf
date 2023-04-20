@@ -29,6 +29,7 @@ resource "scaleway_redis_cluster" "main" {
       "10.12.1.1/20",
     ]
   }
+  zone = var.zone
 
   # acl {
   #   ip          = "0.0.0.0/0"

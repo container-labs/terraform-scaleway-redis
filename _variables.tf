@@ -4,15 +4,19 @@ variable "name" {
 }
 
 variable "tags" {
-  type        = map(any)
+  type = map(any)
 }
 
 variable "private_network_id" {
   type = string
 }
 
-variable "cluster_mode" {
+variable "zone" {
   type = string
+}
+
+variable "cluster_mode" {
+  type    = string
   default = "standalone"
 }
 
